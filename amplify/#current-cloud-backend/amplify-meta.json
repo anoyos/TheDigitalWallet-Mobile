@@ -1,0 +1,137 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-reactnative-dev-193052-authRole",
+      "UnauthRoleArn": "arn:aws:iam::926678881918:role/amplify-reactnative-dev-193052-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::926678881918:role/amplify-reactnative-dev-193052-authRole",
+      "Region": "eu-west-2",
+      "DeploymentBucketName": "amplify-reactnative-dev-193052-deployment",
+      "UnauthRoleName": "amplify-reactnative-dev-193052-unauthRole",
+      "StackName": "amplify-reactnative-dev-193052",
+      "StackId": "arn:aws:cloudformation:eu-west-2:926678881918:stack/amplify-reactnative-dev-193052/2ed643f0-30e9-11ec-9149-0a32a5495508",
+      "AmplifyAppId": "d2vzdg1etsz9mz",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-reactnative-dev-193052-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
+    }
+  },
+  "function": {
+    "mainapis": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "output": {
+        "Region": "eu-west-2",
+        "Arn": "arn:aws:lambda:eu-west-2:926678881918:function:mainapis-dev",
+        "Name": "mainapis-dev",
+        "LambdaExecutionRole": "reactnativeLambdaRolefcec6f37-dev"
+      },
+      "lastPushTimeStamp": "2022-08-22T11:29:34.095Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-reactnative-dev-193052-deployment/amplify-cfn-templates/function/mainapis-cloudformation-template.json",
+        "logicalId": "functionmainapis"
+      },
+      "lastBuildTimeStamp": "2022-08-20T16:35:48.291Z",
+      "lastBuildType": "PROD",
+      "lastPackageTimeStamp": "2022-08-20T16:35:48.421Z",
+      "distZipFilename": "mainapis-49544657616366445978-build.zip",
+      "s3Bucket": {
+        "deploymentBucketName": "amplify-reactnative-dev-193052-deployment",
+        "s3Key": "amplify-builds/mainapis-49544657616366445978-build.zip"
+      },
+      "lastPushDirHash": "ASWANNLTgoRIBRpstQe7wLHmkLg="
+    }
+  },
+  "api": {
+    "mainapis": {
+      "service": "API Gateway",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "mainapis",
+          "attributes": [
+            "Name",
+            "Arn"
+          ]
+        }
+      ],
+      "output": {
+        "ApiName": "mainapis",
+        "RootUrl": "https://xqu9eyuvuh.execute-api.eu-west-2.amazonaws.com/dev",
+        "ApiId": "xqu9eyuvuh"
+      },
+      "lastPushTimeStamp": "2022-08-22T11:29:34.768Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-reactnative-dev-193052-deployment/amplify-cfn-templates/api/mainapis-cloudformation-template.json",
+        "logicalId": "apimainapis"
+      },
+      "lastPushDirHash": "8lX552yXTaBIIZilSPKlFVAVhys="
+    },
+    "apic60289d2": {
+      "service": "API Gateway",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "mainapis",
+          "attributes": [
+            "Name",
+            "Arn"
+          ]
+        }
+      ],
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-reactnative-dev-193052-deployment/amplify-cfn-templates/api/apic60289d2-cloudformation-template.json",
+        "logicalId": "apiapic60289d2"
+      },
+      "lastPushTimeStamp": "2022-08-22T11:29:34.768Z",
+      "output": {
+        "ApiName": "apic60289d2",
+        "RootUrl": "https://mwb0eh2zb2.execute-api.eu-west-2.amazonaws.com/dev",
+        "ApiId": "mwb0eh2zb2"
+      },
+      "lastPushDirHash": "6se7wKJhckw0Nsh7pJQoxX/Hb48="
+    }
+  },
+  "auth": {
+    "reactnative": {
+      "service": "Cognito",
+      "serviceType": "managed",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-reactnative-dev-193052-deployment/amplify-cfn-templates/auth/reactnative-cloudformation-template.json",
+        "logicalId": "authreactnative"
+      },
+      "lastPushTimeStamp": "2022-08-22T11:29:34.768Z",
+      "output": {
+        "CreatedSNSRole": "arn:aws:iam::926678881918:role/sns1bb55254193052-dev",
+        "UserPoolId": "eu-west-2_yGeBpsvUg",
+        "AppClientIDWeb": "7t59v1rpfetgcl41mh3agld0m5",
+        "AppClientID": "1efh48io1lgiurnk535ffcphst",
+        "IdentityPoolId": "eu-west-2:59d84fe5-bb9c-4655-aca1-48eb48da5ecf",
+        "UserPoolArn": "arn:aws:cognito-idp:eu-west-2:926678881918:userpool/eu-west-2_yGeBpsvUg",
+        "IdentityPoolName": "reactnative_identitypool_1bb55254__dev",
+        "UserPoolName": "reactnative_userpool_1bb55254"
+      },
+      "lastPushDirHash": "nCYRKF+EjCDG/22tVdguw3h76SA="
+    }
+  }
+}

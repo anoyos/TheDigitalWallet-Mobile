@@ -1,0 +1,1 @@
+../../../../../node_modules/@sumsub/react-native-mobilesdk-module/ios/MobilesdkModule.h

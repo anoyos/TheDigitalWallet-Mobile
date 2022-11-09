@@ -1,0 +1,41 @@
+{
+  "name": "zohaibfunction",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "aws-sdk": "^2.1004.0",
+    "aws-serverless-express": "^3.3.5",
+    "axios": "^0.22.0",
+    "body-parser": "^1.17.1",
+    "coinbase-commerce-node": "^1.0.4",
+    "cycle": "^1.0.3",
+    "eth-crypto": "^2.1.0",
+    "express": "^4.15.2",
+    "express-async-errors": "^3.1.1",
+    "joi": "^14.3.1",
+    "knex": "^0.95.11",
+    "mysql2": "^2.3.0",
+    "perf_hooks": "0.0.1",
+    "qrcode": "^1.4.4",
+    "stripe": "^8.179.0",
+    "web3": "^1.6.0",
+    "web3-eth": "^1.6.0"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "chai-http": "^4.3.0",
+    "dotenv": "^10.0.0",
+    "eslint": "^8.0.0",
+    "eslint-config-defaults": "^9.0.0",
+    "mocha-junit-reporter": "^2.0.2"
+  },
+  "scripts": {
+    "dev": " node index.local.js",
+    "test": "NODE_ENV=test PRETTY_LOG=1 LOG_LEVEL=info,warn,error npx mocha --recursive --exit",
+    "test-debug": "NODE_ENV=test PRETTY_LOG=1 LOG_LEVEL=info,warn,error npx mocha --recursive --exit --inspect-brk",
+    "test-ci": "NODE_ENV=test PRETTY_LOG=1 LOG_LEVEL=info,warn,error npx mocha --recursive --exit --reporter mocha-junit-reporter"
+  },
+  "author": "",
+  "license": "ISC"
+}

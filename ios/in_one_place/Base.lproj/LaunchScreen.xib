@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="767" height="744"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SplashImage" translatesAutoresizingMaskIntoConstraints="NO" id="QN9-Qd-V9X">
+                    <rect key="frame" x="0.0" y="0.0" width="767" height="744"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="QN9-Qd-V9X" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="CSW-6I-RsH"/>
+                <constraint firstAttribute="bottom" secondItem="QN9-Qd-V9X" secondAttribute="bottom" id="UzW-uI-WEZ"/>
+                <constraint firstAttribute="trailing" secondItem="QN9-Qd-V9X" secondAttribute="trailing" id="o04-SZ-4kh"/>
+                <constraint firstItem="QN9-Qd-V9X" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="vhs-r9-eWy"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="755.79710144927537" y="547.01086956521749"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="SplashImage" width="282" height="500"/>
+    </resources>
+</document>

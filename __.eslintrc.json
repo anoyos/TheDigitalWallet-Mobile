@@ -1,0 +1,46 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true,
+    "mocha": true
+  },
+  "plugins": ["eslint-plugin-react-hooks"],
+  "extends": "airbnb",
+  "parser": "babel-eslint",
+  "rules": {
+    "no-await-in-loop": "off",
+    "no-restricted-syntax": "off",
+    "import/prefer-default-export": "off",
+    "camelcase": "off",
+    "max-len": [1, 200],
+    "object-curly-newline": ["error", {"multiline": true}],
+    "react/prop-types": [0, "ignore"],
+    "no-multiple-empty-lines": [2, {"max": 1, "maxEOF": 0, "maxBOF": 0}],
+    "quotes": [1, "single", "avoid-escape"],
+    "no-use-before-define": [2, {"functions": false, "variables": false}],
+    "semi": ["error", "never"],
+    "prefer-const": 1,
+    "react/prefer-es6-class": 0,
+    "react/jsx-filename-extension": 0,
+    "react/no-array-index-key": [1],
+    "class-methods-use-this": [1],
+    "no-undef": [1],
+    "no-case-declarations": [1],
+    "no-return-assign": [1],
+    "no-param-reassign": [1],
+    "no-shadow": [1],
+    "no-underscore-dangle": [0, "always"],
+    "jsx-a11y/anchor-is-valid": [
+      "error",
+      {
+        "components": ["Link"],
+        "specialLink": ["to", "hrefLeft", "hrefRight"],
+        "aspects": ["noHref", "invalidHref", "preferButton"]
+      }
+    ],
+    "import/no-extraneous-dependencies": "off",
+    "import/no-unresolved": "off",
+    "react/destructuring-assignment": "off"
+  }
+}
